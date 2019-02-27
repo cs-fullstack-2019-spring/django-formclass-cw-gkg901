@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Employee Application</h1>
+<!--FORM SENDS TO FORMINFO.HTML ON SUBMIT-->
+<form action="{% url 'formInfo' %}" method="post">
+    {% csrf_token %}
+    {{ newForm}}
+    <button>Submit</button>
+</form>
+</body>
+</html>
